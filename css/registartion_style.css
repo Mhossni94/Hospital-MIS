@@ -1,0 +1,51 @@
+html{
+    height: 100%;
+}
+.main{
+    background-image: url(../images/registeration-bg.jpg);
+    background-repeat: no-repeat;
+    background-size:100% 100%;   
+    
+    
+}
+.registeration{
+    background-color:gray;
+
+    
+    
+    
+
+}
+.register-all{
+
+}
+.reg-info{
+    margin-top:50vh;
+    padding:20px;
+    text-align:center;
+
+}
+.reg-info h1{
+    color:white;
+    font-family: sans-serif;
+    font-size: 38px;
+    text-align: center;
+
+}
+.reg-info p{
+    color:whitesmoke;
+}
+.registeration label{
+    padding:10px;
+    display: block;
+    margin:auto;
+}
+
+
+
+
+.birth select{
+    width:100%;
+    padding:0px;
+    margin:0px;
+}
