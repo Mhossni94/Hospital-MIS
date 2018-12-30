@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/fontawesomepro.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/Patients%20Tables.css" />
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,700" rel="stylesheet">
+
+    <title>Patients Data</title>
+</head>
+
+<body>
+
+<!--Profile NavBar -->
+<nav class="navbar navbar-light mb-5">
+    <a class="navbar-brand" href="#">
+        <img src="images/HospitalIQ.png" id=logoImg/>    
+    </a>
+    <ul class="list-unstyled">
+       <li><input type="search" placeholder="Search"/></li>
+        <li><i class="fas fa-search" ></i></li>
+        <li><i class="fas fa-bell" ></i></li>
+        <li><i class="fas fa-user" ></i></li>
+    </ul>
+</nav>
+
+<!--Patients Section -->
+
+<section id="sectiontable" class=" m-auto">
+  
+   
+<!--Patients -->
+  
+   <div>
+       <div class="w-25 m-auto ">
+       <span class="h1 mr-4">Patients</span>
+       <i class="fal fa-2x fa-plus-square" onclick="addPatient()"></i>
+       <i class="fal fa-2x fa-minus-square" onclick="removePatient()"></i>
+       <i class="fal fa-2x fa-edit" onclick="editPatient()"></i>
+       </div>
+   </div>
+
+ 
+ 
+ 
+<!--Table Content -->
+<div id="table">  
+   <table  class="w-100 mt-3 text-center text-nowrap ">
+       <thead class="text-nowrap">
+           <th>ID</th>
+           <th>First Name</th>
+           <th>Last Name</th>
+           <th>Email</th>
+           <th>Phone Number</th>
+           <th>Age</th>
+           <th>Insurance</th>
+           <th>Blood Type</th>
+           <th>Referral</th>
+           <th>Complain</th>
+           <th>Paid Amount</th>
+           <th>Debit Amount</th>
+           <th>Medical History</th>
+           <th>allergies</th>
+       </thead>
+       <tbody id="tableBody">
+       </tbody>
+       
+       
+   </table>
+</div>
+
+</section>
+  
+  
+  
+<!-- Add Section -->
+ 
+ 
+  <section id="addPatient" >
+      <div class="overlay" onclick="hide()"></div>
+          <div class="infoa px-4">
+             
+              <label class="d-block">Name</label>
+              <div class="w-50 float-left pr-1">
+              <input type="text" placeholder="First Name" id="fName" class="form-control"/>
+              </div>
+              <div class="w-50 float-right pl-1">
+              <input type="text" placeholder="Last Name" id="lName" class="form-control"/>
+              </div>
+              
+              <label>E-Mail</label>
+              <input type="email" placeholder="Your E-Mail" id="mail" class="form-control"/>
+          
+              <label>Phone Number</label>
+              <input type="tel" placeholder="Phone Number" id="pNumber" class="form-control"/>
+          
+              <label>Birthday</label>
+              <input type="date" placeholder="Birthday" id="birthday" class="form-control"/>
+              
+              <label>Insurance</label>
+              <input type="number" placeholder="Insurance" id="insurance" class="form-control"/>
+          
+              <label>Referral</label>
+              <input type="text" placeholder="Referral" id="referral" class="form-control"/>
+          
+              <label>Complain</label>
+              <input type="text" placeholder="Complain" id="complain" class="form-control"/>
+              
+              <label>Blood Type</label>
+              <input type="text" placeholder="Complain" id="complain" class="form-control"/>
+          
+              <label>Paid Amount</label>
+              <input type="number" placeholder="Paid Amount" id="pAmount" class="form-control"/>
+          
+              <label>Debit Amount</label>
+              <input type="number" placeholder="Debit Amount" id="dAmount" class="form-control"/>
+          
+              <label>Allergies</label>
+              <input type="text" placeholder="Allergies" id="allergies" class="form-control"/>
+          
+              <label>Medical History</label>
+              <textarea placeholder="Medical History" id="mHistory" class="form-control" maxlength="200" rows="5" ></textarea>
+              <div class="btn btn-primary my-3 float-right" onclick="addOnePatient()">Confirm</div>
+          </div>
+  </section>
+  
+  
+<!-- Remove Section -->
+ 
+ 
+  <section id="removePatient"  >
+      <div class="overlay" onclick="hide()" id="hide1"></div>
+          <div class="infor px-4 py-2">
+             
+              <label class="d-block">Enter The ID</label>
+              <input type="number" placeholder="ID" id="idRemove" class="form-control"/>
+              
+              <div class="btn btn-primary my-3 float-right" onclick="removeOnePatient()">Remove Patient</div>
+          </div>
+     
+  </section>
+  
+  
+<!-- edit Section -->
+ 
+  <section id="editPatient">
+      <div class="overlay" onclick="hide()"></div>
+          <div class="infoe px-4 ">
+             
+              <label class="d-block">Name</label>
+              <div class="w-50 float-left pr-1">
+              <input type="text" placeholder="First Name" id="fName" class="form-control"/>
+              </div>
+              <div class="w-50 float-right pl-1">
+              <input type="text" placeholder="Last Name" id="lName" class="form-control"/>
+              </div>
+              
+              <label>E-Mail</label>
+              <input type="email" placeholder="Your E-Mail" id="mail" class="form-control"/>
+          
+              <label>Phone Number</label>
+              <input type="tel" placeholder="Phone Number" id="pNumber" class="form-control"/>
+          
+              <label>Birthday</label>
+              <input type="date" placeholder="Birthday" id="birthday" class="form-control"/>
+              
+              <label>Insurance</label>
+              <input type="number" placeholder="Insurance" id="insurance" class="form-control"/>
+          
+              <label>Referral</label>
+              <input type="text" placeholder="Referral" id="referral" class="form-control"/>
+          
+              <label>Complain</label>
+              <input type="text" placeholder="Complain" id="complain" class="form-control"/>
+          
+              <label>Paid Amount</label>
+              <input type="number" placeholder="Paid Amount" id="pAmount" class="form-control"/>
+          
+              <label>Debit Amount</label>
+              <input type="number" placeholder="Debit Amount" id="dAmount" class="form-control"/>
+          
+              <label>Allergies</label>
+              <input type="text" placeholder="Allergies" id="allergies" class="form-control"/>
+          
+              <label>Medical History</label>
+              <textarea placeholder="Medical History" id="mHistory" class="form-control" maxlength="200" rows="5" ></textarea>
+              <div class="btn btn-primary my-3 float-right" onclick="confirm()">Confirm</div>
+        </div>
+              
+  </section>
+<!-- footer -->
+   <footer>
+        <div class="container mt-5">
+            <div class="row footer">
+                <div class="col-md-6">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-google-plus-g"></i><br>
+                    <p>Phone:010-0000-0000</p>
+                    <p>Mail:MIS@gmail.com</p>
+                </div>
+                <div class="col-md-6">
+                    &commat; 2019 <a href="#">MIS</a> Made by team
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<!-- End of Page -->
+   
+   
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/Patients%20Tables.js"></script>
+</body>
+
+</html>
