@@ -1,4 +1,4 @@
-/*global console, alert, promot*/
+
 var users = [
     {ID:1,fName:"Omar",lName:"Elsayed",Email:"Challengeromar27@hotmail.com",PhoneNumber:'01554171056',Birthday:'09/18/1997',Insurance:5000,
     Referral:"Headache",Complain:"Headache",PaidAmount:2500,DebitAmount:0,Allergies:"IDK",MedicalHistort:"Sugar"},
@@ -9,8 +9,28 @@ var users = [
     {ID:4,fName:"Adam",lName:"Salah",Email:"AdamSalah@hotmail.com",PhoneNumber:"01149112935",Birthday:'09/18/1997',Insurance:4510,
     Referral:"Kidney",Complain:"Kidney",PaidAmount:20412,DebitAmount:0,Allergies:"IDK",MedicalHistort:"Example"},
     {ID:5,fName:"Ahmed",lName:"Mohamed",Email:"AhmedMohamed@hotmail.com",PhoneNumber:"01554171056",Birthday:'09/18/1997',Insurance:7854,
+    Referral:"Stomach",Complain:"Stomach",PaidAmount:5474,DebitAmount:0,Allergies:"IDK",MedicalHistort:"Anything"},{ID:1,fName:"Omar",lName:"Elsayed",Email:"Challengeromar27@hotmail.com",PhoneNumber:'01554171056',Birthday:'09/18/1997',Insurance:5000,
+    Referral:"Headache",Complain:"Headache",PaidAmount:2500,DebitAmount:0,Allergies:"IDK",MedicalHistort:"Sugar"},
+    {ID:2,fName:"Abdullah",lName:"Amr",Email:"AbdullahAmr@hotmail.com",PhoneNumber:"01149112935",Birthday:'09/18/1997',Insurance:45634,
+    Referral:"Emergency",Complain:"Emergency",PaidAmount:7862,DebitAmount:0,Allergies:"IDK",MedicalHistort:"Yes"},
+    {ID:3,fName:"Mohamed",lName:"Hosny",Email:"MohamedHosny@hotmail.com",PhoneNumber:"0101008990",Birthday:'09/18/1997',Insurance:24524,
+    Referral:"Worth",Complain:"Worth",PaidAmount:245245,DebitAmount:0,Allergies:"IDK",MedicalHistort:"Test"},
+    {ID:4,fName:"Adam",lName:"Salah",Email:"AdamSalah@hotmail.com",PhoneNumber:"01149112935",Birthday:'09/18/1997',Insurance:4510,
+    Referral:"Kidney",Complain:"Kidney",PaidAmount:20412,DebitAmount:0,Allergies:"IDK",MedicalHistort:"Example"},
+    {ID:5,fName:"Ahmed",lName:"Mohamed",Email:"AhmedMohamed@hotmail.com",PhoneNumber:"01554171056",Birthday:'09/18/1997',Insurance:7854,
+    Referral:"Stomach",Complain:"Stomach",PaidAmount:5474,DebitAmount:0,Allergies:"IDK",MedicalHistort:"Anything"},{ID:1,fName:"Omar",lName:"Elsayed",Email:"Challengeromar27@hotmail.com",PhoneNumber:'01554171056',Birthday:'09/18/1997',Insurance:5000,
+    Referral:"Headache",Complain:"Headache",PaidAmount:2500,DebitAmount:0,Allergies:"IDK",MedicalHistort:"Sugar"},
+    {ID:2,fName:"Abdullah",lName:"Amr",Email:"AbdullahAmr@hotmail.com",PhoneNumber:"01149112935",Birthday:'09/18/1997',Insurance:45634,
+    Referral:"Emergency",Complain:"Emergency",PaidAmount:7862,DebitAmount:0,Allergies:"IDK",MedicalHistort:"Yes"},
+    {ID:3,fName:"Mohamed",lName:"Hosny",Email:"MohamedHosny@hotmail.com",PhoneNumber:"0101008990",Birthday:'09/18/1997',Insurance:24524,
+    Referral:"Worth",Complain:"Worth",PaidAmount:245245,DebitAmount:0,Allergies:"IDK",MedicalHistort:"Test"},
+    {ID:4,fName:"Adam",lName:"Salah",Email:"AdamSalah@hotmail.com",PhoneNumber:"01149112935",Birthday:'09/18/1997',Insurance:4510,
+    Referral:"Kidney",Complain:"Kidney",PaidAmount:20412,DebitAmount:0,Allergies:"IDK",MedicalHistort:"Example"},
+    {ID:5,fName:"Ahmed",lName:"Mohamed",Email:"AhmedMohamed@hotmail.com",PhoneNumber:"01554171056",Birthday:'09/18/1997',Insurance:7854,
     Referral:"Stomach",Complain:"Stomach",PaidAmount:5474,DebitAmount:0,Allergies:"IDK",MedicalHistort:"Anything"},
 ]
+
+
 
 function viewPatients(){
 var adduser="";
