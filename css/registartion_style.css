@@ -1,4 +1,9 @@
-*{font-family: 'Work Sans', sans-serif;color:#145C81!important; }
+html{
+    height: 100%;
+}
+/* General */
+*{font-family: 'Work Sans', sans-serif}
+i {cursor: pointer;}
 
 /* NavBar */
 nav a{color:#145C81!important;text-decoration: none!important;font-weight: 600;}
@@ -14,6 +19,7 @@ footer span{font-weight: 400;}
 footer i{font-size: 30px;margin-right: 10px}
 
 /* items in footer */
+footer .items {margin:20px 0;}
 footer .items .d-flex,h4{margin-bottom: 20px;}
 footer .items a{display: block;margin:20px 0;font-weight: 400;}
 
@@ -29,9 +35,6 @@ footer .items a{display: block;margin:20px 0;font-weight: 400;}
 /* Copy Right */
 .copyright{font-size: 20px;color:#0DA2DD!important;}
 
-html{
-    height: 100%;
-}
 .main{
     background-image: url(../images/registeration-bg.jpg);
     background-repeat: no-repeat;
@@ -79,9 +82,4 @@ html{
     width:100%;
     padding:0px;
     margin:0px;
-}
-
-button{
- margin-top: 10px;
- margin-bottom:15px;
 }

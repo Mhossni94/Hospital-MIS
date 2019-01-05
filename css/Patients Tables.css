@@ -1,74 +1,70 @@
 /* General */
-*{font-family: 'Comfortaa', cursive;}
+*{font-family: 'Work Sans', sans-serif}
 i {cursor: pointer;}
-/* navbar */
-.navbar-light{background-color: #51b8f2!important;color:fff!important;}
-nav ul li {display:inline-block;}
-nav ul li input{border-radius: 20px;border:none;color:#54667a; text-align: center;}
-nav ul{margin: 0;margin-right: 30px;}
-nav ul li i{color: #fff; padding: 10px; cursor: pointer;}
-nav ul li i:hover{color: #54667a;}
+
+/* NavBar */
+nav a{color:#145C81!important;text-decoration: none!important;font-weight: 600;}
+nav a:hover{color:#0DA2DD!important;}
+nav .active a{color:#0DA2DD!important;}
 
 /* Patients */
-.h1 {color: #54667a;}
+.h1 {color: #145C81;}
 .fa-edit {top: -2px;position: relative;}
 
 /* table patients */
 #sectiontable {width: 95%;}
-#sectiontable i:hover{color: #51b8f2;}
-#sectiontable i{color: #54667a;}
-#table thead{background-color: #51b8f2}
+#sectiontable i:hover{color: #0DA2DD;}
+#sectiontable i{color: #145C81;}
+#table thead{border-bottom: 1px solid;border-color: #0DA2DD}
 #table th{padding:10px;}
 #table td{padding: 10px;}
-#table {overflow: auto;}
-
-
+#table {overflow: auto;height: 450px;}
 
 /* Patient Fourm*/
 #addPatient{display: none;}
 #removePatient{display: none;}
 #editPatient{display: none;}
+
 /* Over Lay */
-.overlay{position:fixed;top:0;bottom:0;left:0;right: 0;background-color: rgba(0, 0, 0, 0.5);display:flex;align-items:center;justify-content:center;}
+.overlay{position:fixed;top:0;bottom:0;left:0;right:0;background-color:rgba(0, 0, 0, 0.5);display:flex;align-items:center;justify-content:center;z-index: 2500}
+
+/* info All */
+.infoa,.infor,.infoe{overflow: auto;background-color: aliceblue;border-radius: 20px;position:fixed;top:10%;bottom:0;left:25%;right: 0;z-index: 2501}
 
 /* Info  Add Patient*/
-.infoa{width:50%;height: 80%;overflow: auto;background-color: aliceblue;border-radius: 20px;position:fixed;top:10%;bottom:0;left:25%;right: 0;z-index: 5}
+.infoa{width:50%;height: 80%;}
 
 /* Info  remove Patient */
-.infor{width:50%;height: 30%;overflow: auto;background-color: aliceblue;border-radius: 20px;position:fixed;top:10%;bottom:0;left:25%;right: 0;z-index: 5}
+.infor{width:50%;height: 30%;}
 
 /* Info  edit Patient */
-.infoe{width:50%;height: 80%;overflow: auto;background-color: aliceblue;border-radius: 20px;position:fixed;top:10%;bottom:0;left:25%;right: 0;z-index: 5}
+.infoe{width:50%;height: 80%;}
 
 /* Labels */
 label {margin-top: 10px;}
 
-/* textare */
-textarea{resize: none;}
+/*Footer */
+footer a{color:#145C81!important;text-decoration: none!important;font-weight: 600;}
+footer a:hover{color:#0DA2DD!important;}
+footer .active a{color:#0DA2DD!important;}
+footer h4{font-weight: 600;}
+footer span{font-weight: 400;}
+footer i{font-size: 30px;margin-right: 10px}
 
+/* items in footer */
+footer .items {margin:20px 0;}
+footer .items .d-flex,h4{margin-bottom: 20px;}
+footer .items a{display: block;margin:20px 0;font-weight: 400;}
 
-/*start footer*/
+/* Social Icons */
+.social-icons i {padding: 15px;}
+.social-icons .fa-facebook-f {color:#3b5998!important;}
+.social-icons .fa-twitter{color:#1da1f2!important;}
+.social-icons .fa-google-plus-g {color:#db4437!important;}
+.social-icons .fa-whatsapp {color:#25d366!important;}
+.social-icons .fa-youtube {color:#ff0000!important;}
+.social-icons i:hover{transition: 0.3s;opacity: 0.5;}
 
-footer {
-    background-color: #54667a;
-}
-
-.footer {
-    align-items: center;
-}
-
-.footer i {
-    text-align: left;
-    font-size: 20px;
-    color: #51b8f2;
-    padding: 15px;
-}
-
-
-/*End footer*/
-
-
-
-
-
+/* Copy Right */
+.copyright{font-size: 20px;color:#0DA2DD!important;}
 
