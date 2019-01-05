@@ -4,177 +4,373 @@
 
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/all.min.css" />
-    <link rel="stylesheet" href="css/Home.css" />
+    <link rel="stylesheet" href="css/fontawesomepro.css" />
+    <link href="css/skitter.css" type="text/css" media="all" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+     <link rel="stylesheet" href="css/Home.css" />
     <meta charset="utf-8" />
     <title>MIS Hospital</title>
 </head>
 
 <body>
-    <!--start navbar-->
-    <nav class="navbar navbar-light">
-        <a class="navbar-brand" href="#">
-            <img src="images/HospitalIQ.png" width="150" height="50" class="d-inline-block align-top ml-3" alt="">
-        </a>
-        <ul class="list-unstyled">
-            <li><input type="text" placeholder="Search"></li>
-            <button class="btn btn-sm btn-primary">Sign In</button>
-            <button class="btn btn-sm btn-primary">Sign Up</button>
-        </ul>
-    </nav>
-    <!--End nav bar-->
+     <!-- Navbar -->
+    <div class="nav">
+    <nav class=" navbar navbar-expand-lg navbar-light position-fixed fixed-top">
+            <!-- Navbar Brand -->
+            <a href="index.html" class="navbar-brand"><img src="images/HospitalIQ.png" alt="HQLogo" /></a>
+
+            <!-- Navbar Expand Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Items In Navbar -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active"><a href="#" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                    <li class="nav-item"><a href="registration.html" class="nav-link">Signup</a></li>
+                    <li class="nav-item"><a href="login.html" class="nav-link">Login</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+ <!-- end of Navbar -->
 
 
     <!--start cover and title-->
-    <section class="cover">
-
-    </section>
-
-    <section class="caption">
-        <h1>hospital mis</h1>
-        <div class="container">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt sunt quasi odio quo tempore nesciunt blanditiis inventore neque, corrupti modi similique, error nulla magni consequuntur, dolorum iusto rerum. Nisi, laborum. Dicta vero nesciunt
-                numquam blanditiis aliquid, repellat quaerat excepturi dolorem, consequuntur. Id iure rerum alias! Culpa, eum itaque fuga provident iusto corrupti praesentium. Ipsum quo minima beatae maiores quam aut dolores ipsam doloremque laudantium
-                ipsa illo ab nesciunt sapiente tenetur, quis, reiciendis blanditiis sint autem natus perferendis aperiam provident suscipit facilis. Dignissimos consequuntur pariatur consectetur quas placeat at, quo labore exercitationem numquam, harum
-                qui. Eveniet, optio recusandae aut! Impedit saepe quisquam pariatur voluptate cupiditate. Esse explicabo cupiditate pariatur sed accusantium tempore eos expedita. Incidunt dolores ipsam, soluta nisi amet aut repellat maxime eligendi sunt
-                consectetur possimus ab atque ducimus, quae iure cum commodi, doloremque fugiat numquam minima vero excepturi.</p>
+   <section id="gallery">      
+<div id="carouselExampleIndicators" class="carousel slide m-auto carousel-fade" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0">
+        <span></span>  
+    </li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1">
+      <span></span></li>   
+      <li data-target="#carouselExampleIndicators" data-slide-to="2">
+      <span></span></li>   
+  </ol>
+  <div class="carousel-inner">
+      <div class="carousel-item active">
+      <img class="d-block w-100" src="images/slider-2.jpg" alt="Second slide">
+        
+    <div class="carousel-caption d-none d-md-block">
+    <h5>.</h5>
+    <p>.</p>
+  </div>        
+        
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100 " src="images/slider-1.jpg" alt="First slide">
+        
+    <div class="carousel-caption d-none d-md-block">
+    <h5>...</h5>
+    <p>...</p>
+  </div>
+        
+        
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="images/slider-2.jpg" alt="Second slide">
+        
+    <div class="carousel-caption d-none d-md-block">
+    <h5>.</h5>
+    <p>.</p>
+  </div>        
+        
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control" aria-hidden="true"><i class="fas fa-angle-left"></i></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control" aria-hidden="true"><i class="fas fa-angle-right"></i> </span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>        
+    <!-- end cover >
+<!--start About-->
+       <section id="about">
+<!--  Start container-->
+       <div class="container">
+            <div class="row">
+                <div class="col-md-5 col-sm-12">
+                    <div class="imgs">
+                        <img src="images/about.jpg" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-7 col-sm-12">
+                    <div class="caption">
+                        <h2>About us</h2>
+                        <h4>What we are and our history</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,</p>
+                        <button class="btn btn-outline-info">READ MORE</button>
+                    </div>
+                    <div class="vision">
+                        <h2>VISION &amp; MISSION</h2>
+                        <h5>Our goal and thoughts</h5>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,</p>
+                    </div>
+                </div>
+                </div>
+           <div class="our-services">
+                     <div class="row">
+                        <div class="col-md-4 col-sm-12">
+                            <div class="title c1">
+                                 <h2>Our services list</h2>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            </div>
+                        </div>
+                         <div class=" col-md-4 col-sm-12">
+                            <div class="title c2">
+                                    <h2>Our Benefits</h2>
+                                <p>It is a long established fact that a reader will .</p>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <i class="fa fa-caret-right py-2"></i>
+                                        Qualified Staff of Doctors      
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-caret-right py-2"></i>
+                                        Employee Occupational Health & Wellness      
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-caret-right py-2"></i>
+                                        Save Your Money and Time with us    
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-caret-right py-2"></i>
+                                        24x7 Emergency service      
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-caret-right py-2"></i>
+                                        Feel Like you are at Home Services      
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                         <div class="col-md-4 col-sm-12">
+                            <div class="title c3">
+                                    <h2>Our Wsorking Hours</h2>
+                                <p>It is a long established fact that a reader will .</p>
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <td>Monday-Wednesday</td>
+                                            <td>08.00-18.00</td>
+                                        </tr>
+                                         <tr>
+                                            <td>Thursday -Friday</td>
+                                            <td>08.00-18.00</td>
+                                        </tr>
+                                         <tr>
+                                            <td>Saturday</td>
+                                            <td>08.00-18.00</td>
+                                        </tr>
+                                         <tr>
+                                            <td>Sunday</td>
+                                            <td>Closed</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+           </div>   
         </div>
-    </section>
-    <!-- end cover and title-->
+<!--  End container   -->
+       </section>
     <!-- start our services -->
-    <section class="services">
+    <section id="services">
         <div class="container">
             <div class="row">
-               <div class="title col-md-12 pb-5">
-                   <h2>Services</h2>
-               </div>
-                <div class="col-md-2 col-sm-4">
-                    <div class="service">
-                        <img src="images/mandala-1808239_960_720.png" class="img-fluid">
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-8">
-                   <h4>Lorem ipsum dolor sit.</h4>
+                <div class="col-md-12 text-center">
                     <div class="title">
-                       <h5>Lorem ipsum dolor sit.</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore illum, temporibus ea, pariatur adipisc</p>
+                        <h3>Service We Offer</h3>
+                        <p>Our department & special service</p>
                     </div>
                 </div>
-                <div class="col-md-2 col-sm-4">
-                    <div class="service">
-                        <img src="images/mandala-1808239_960_720.png" class="img-fluid">
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-12 service">
+                    <div class="icone float-left w-25">
+                        <i class="fas fa-ambulance fa-3x icon-color-1 hvr-buzz-out"></i>
+                    </div>
+                    <div class="caption float-right w-75">
+                        <h4>Emergency Care</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</p>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-8">
-                    <h4>Lorem ipsum dolor sit.</h4>
-                    <div class="title">
-                       <h5>Lorem ipsum dolor sit.</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore illum, temporibus ea, pariatur adipisc</p>
+                <div class="col-md-4 col-sm-12 service">
+                    <div class="icone float-left w-25">
+                        <i class="fas fa-stethoscope fa-3x icon-color-2 hvr-buzz-out"></i>
+                    </div>
+                    <div class="caption float-right w-75">
+                        <h4>Emergency Care</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</p>
                     </div>
                 </div>
-                <div class="col-md-2 col-sm-4">
-                    <div class="service">
-                        <img src="images/mandala-1808239_960_720.png" class="img-fluid">
+                <div class="col-md-4 col-sm-12 service">
+                    <div class="icone float-left w-25">
+                        <i class="fas fa-phone-volume fa-3x icon-color-3 hvr-buzz-out"></i>
+                    </div>
+                    <div class="caption float-right w-75">
+                        <h4>Emergency Care</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</p>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-8">
-                    <h4>Lorem ipsum dolor sit.</h4>
-                    <div class="title">
-                       <h5>Lorem ipsum dolor sit.</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore illum, temporibus ea, pariatur adipisc</p>
+                <div class="col-md-4 col-sm-12 service">
+                    <div class="icone float-left w-25">
+                        <i class="fas fa-notes-medical fa-3x icon-color-4 hvr-buzz-out"></i>
+                    </div>
+                    <div class="caption float-right w-75">
+                        <h4>Emergency Care</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</p>
                     </div>
                 </div>
-                <div class="col-md-2 col-sm-4">
-                    <div class="service">
-                        <img src="images/mandala-1808239_960_720.png" class="img-fluid">
+                <div class="col-md-4 col-sm-12 service">
+                    <div class="icone float-left w-25">
+                        <i class="fas fa-heartbeat fa-3x icon-color-5 hvr-buzz-out"></i>
+                    </div>
+                    <div class="caption float-right w-75">
+                        <h4>Emergency Care</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</p>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-8">
-                    <h4>Lorem ipsum dolor sit.</h4>
-                    <div class="title">
-                       <h5>Lorem ipsum dolor sit.</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore illum, temporibus ea, pariatur adipisc</p>
+                <div class="col-md-4 col-sm-12 service">
+                    <div class="icone float-left w-25">
+                        <i class="fas fa-tooth fa-3x icon-color-6 hvr-buzz-out"></i>
+                    </div>
+                    <div class="caption float-right w-75">
+                        <h4>Emergency Care</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 service">
+                    <div class="icone float-left w-25">
+                        <i class="fas fa-stethoscope fa-3x icon-color-7 hvr-buzz-out"></i>
+                    </div>
+                    <div class="caption float-right w-75">
+                        <h4>Emergency Care</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 service">
+                    <div class="icone float-left w-25">
+                        <i class="fas fa-eye fa-3x icon-color-8 hvr-buzz-out"></i>
+                    </div>
+                    <div class="caption float-right w-75">
+                        <h4>Emergency Care</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 service">
+                    <div class="icone float-left w-25">
+                        <i class="fas fa-heart fa-3x icon-color-9 hvr-buzz-out"></i>
+                    </div>
+                    <div class="caption float-right w-75">
+                        <h4>Emergency Care</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- end our services -->
-    <!--start contact -->
-    <section class="contact">
-        <div class="container">
-            <div class="row text-center">
-                <h2>Contact Us:</h2>
-                <div class="col-md-12">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus eveniet sequi facilis sit unde enim quasi libero modi quibusdam non vel iusto ad consequatur minus, nam, tempore assumenda placeat cum magni quisquam fugiat dolorum. Consectetur
-                        pariatur perferendis eligendi possimus, laborum tempore nihil harum, molestiae necessitatibus cumque, recusandae ducimus quaerat voluptatem!</p>
-                </div>
-                <div class="col-md-12">
-                    <div class="map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3455.397291377115!2d30.96734268514184!3d29.996746627779718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1458573e2f6b6f09%3A0xf7675afa4fa8185f!2z2YXYs9iq2LTZgdmJINis2KfZhdi52Kkg2YXYtdixINmE2YTYudmE2YjZhSDZiNin2YTYqtmD2YbZiNmE2YjYrNmK2Kc!5e0!3m2!1sar!2seg!4v1545914032015"
-                            width="100%" height="550" frameborder="0" style="border:0" allowfullscreen></iframe>
+    
+    <!-- footer -->
+
+    <footer class="border-top" id="contact">
+        <!-- footer Container -->
+        <div class="container mb-3">
+            <!-- footer Items -->
+            <div class="row items">
+
+                <!-- footer 1st Item -->
+                <div class="col-lg-3 col-md-5 col-xs-6">
+                    <h4>Contact</h4>
+                    <div class="d-flex container">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>8901 Marmora Road Chi Minh City, Vietnam</span>
+                    </div>
+                    <div class="d-flex container">
+                        <i class="fas fa-phone"></i>
+                        <span>0800-123456 (24/7 Support Line)</span>
+                    </div>
+                    <div class="d-flex container">
+                        <i class="fas fa-fax"></i>
+                        <span>(123) 123-4567</span>
+                    </div>
+                    <div class="d-flex container">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@demo.com</span>
                     </div>
                 </div>
-                <div class="col-md-6 col-sm-12">
-                    <div class="social-icone">
-                        <p>
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Misr univeersity, 6'October City, Giza , Egypt</span>
-                        </p>
-                        <p>
-                            <i class="fas fa-envelope"></i>
-                            <a href="MIS@gmail.com">MIS@gmail.com</a>
-                        </p>
-                        <p>
-                            <i class="fas fa-phone"></i>
-                            <a href="#">010-0000-0000</a>
-                        </p>
-                        <p>
-                            <i class="fab fa-facebook-f"></i>
-                            <i class="fab fa-twitter"></i>
-                            <i class="fab fa-google-plus-g"></i>
-                        </p>
-                    </div>
+
+                <!-- footer 2nd Item -->
+                <div class="col-lg-3 col-md-5 col-xs-6">
+                    <h4>Support</h4>
+                    <a href="#">Support</a>
+                    <a href="#">Contact Us</a>
+                    <a href="#">Request Appointment</a>
+                    <a href="#">Site Map</a>
+                    <a href="#">Care Help Line</a>
                 </div>
-                <div class="col-md-6 col-sm-12">
+
+                <!-- footer 3rd Item -->
+                <div class="col-lg-3 col-md-5 col-xs-6">
+                    <h4>Links</h4>
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Login</a>
+                    <a href="#">Register</a>
+                    <a href="#">About Us</a>
+                </div>
+
+                <!-- footer 4th Item -->
+                <div class="col-lg-3 col-md-5 col-xs-6">
+                    <h4>Feed Back</h4>
                     <form>
-                        <div class="form-row">
-                            <div class="form-group col-md-6 col-sm-12">
-                                <input type="text" class="form-control" id="inputName" placeholder="Name*">
-                            </div>
-                            <div class="form-group col-md-6 col-sm-12">
-                                <input type="email" class="form-control" id="inputEmail4" placeholder="Email*">
-                            </div>
-                            <div class="form-group col-md-12">
-                                <textarea placeholder="Massage*" name="massage" class="form-control" style="height: 50px;"></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-info float-right">SUBMIT</button>
-                        </div>
+                        <input type="email" placeholder="Your Email" class="form-control" />
+                        <textarea placeholder="Your Feed Back Here" class="form-control mt-4"></textarea>
+                        <button class="btn btn-outline-success float-right mt-4">Send</button>
                     </form>
+                    <div class="clearfix"></div>
                 </div>
+
+
             </div>
         </div>
-    </section>
-    <footer>
-        <div class="container">
-            <div class="row footer">
-                <div class="col-md-6">
-                    <i class="fab fa-facebook-f"></i>
-                    <i class="fab fa-twitter"></i>
-                    <i class="fab fa-google-plus-g"></i><br>
-                    <p>Phone:010-0000-0000</p>
-                    <p>Mail:MIS@gmail.com</p>
-                </div>
-                <div class="col-md-6">
-                    &commat; 2019 <a href="#">MIS</a> Made by team
+
+        <!-- Copy Rights -->
+        <div class="bg-dark text-center copyrights">
+            <div class="container-fluid ">
+                <div class="row">
+                    <div class="col-lg-6 social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+
+                    </div>
+                    <div class="col-lg-6 copyright"><span >© Copyright 2019 All Rights Reserved</span></div>
                 </div>
             </div>
         </div>
     </footer>
-    <!--End contact -->
-    <script src="js/jquery-3.3.1.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/particles.js"></script>
+    <button id="scrllTop" class="btn btn-info">
+			<i class="fas fa-arrow-alt-circle-up"></i>
+    </button>
+    <!-- end of footer -->
+<script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="dist/jquery.skitter.min.js"></script>
+    <script src="js/popper.min.js"></script>    
+    <script src="js/bootstrap.min.js"></script>        
     <script src="js/main.js"></script>
 </body>
 
