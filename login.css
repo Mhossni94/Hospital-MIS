@@ -1,0 +1,38 @@
+*{font-family: 'Work Sans', sans-serif;color:#145C81!important; }
+
+/* NavBar */
+nav a{color:#145C81!important;text-decoration: none!important;font-weight: 600;}
+nav a:hover{color:#0DA2DD!important;}
+nav .active a{color:#0DA2DD!important;}
+
+/*Footer */
+footer a{color:#145C81!important;text-decoration: none!important;font-weight: 600;}
+footer a:hover{color:#0DA2DD!important;}
+footer .active a{color:#0DA2DD!important;}
+footer h4{font-weight: 600;}
+footer span{font-weight: 400;}
+footer i{font-size: 30px;margin-right: 10px}
+
+/* items in footer */
+footer .items .d-flex,h4{margin-bottom: 20px;}
+footer .items a{display: block;margin:20px 0;font-weight: 400;}
+
+/* Social Icons */
+.social-icons i {padding: 15px;}
+.social-icons .fa-facebook-f {color:#3b5998!important;}
+.social-icons .fa-twitter{color:#1da1f2!important;}
+.social-icons .fa-google-plus-g {color:#db4437!important;}
+.social-icons .fa-whatsapp {color:#25d366!important;}
+.social-icons .fa-youtube {color:#ff0000!important;}
+.social-icons i:hover{transition: 0.3s;opacity: 0.5;}
+
+/* Copy Right */
+.copyright{font-size: 20px;color:#0DA2DD!important;}
+
+
+.login{
+    
+    width:50%;    
+    margin:200px auto;
+    text-align: center;
+}
