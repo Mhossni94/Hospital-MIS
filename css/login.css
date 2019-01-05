@@ -31,8 +31,16 @@ footer .items a{display: block;margin:20px 0;font-weight: 400;}
 
 
 .login{
-    
+
+    padding-top:200px;
+    padding-bottom:200px;
     width:50%;    
-    margin:200px auto;
+    margin: auto;
     text-align: center;
+}
+button{
+    margin:15px auto;
+}
+.login-section{
+    background-color: #f1f1f1
 }
