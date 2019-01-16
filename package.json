@@ -1,0 +1,26 @@
+{
+  "name": "mis-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build":"webpack src/script.js dist/bundle.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mhossni94/Hospital-MIS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mhossni94/Hospital-MIS/issues"
+  },
+  "homepage": "https://github.com/Mhossni94/Hospital-MIS#readme",
+  "dependencies": {
+    "webpack": "^4.28.4"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.2.1",
+    "webpack-dev-server": "^3.1.14"
+  }
+}
