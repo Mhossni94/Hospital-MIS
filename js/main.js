@@ -1,3 +1,13 @@
+ $(".nav-link").click(
+    function () {
+      $(this).parent().siblings().css("backgroundColor", "transparent");
+      $("nav ul li").addClass("active").siblings("li").removeClass("active");
+      $(this).parent().css("color", "#fff");
+      var aHref = $(this).attr("href");
+      var d = $(aHref).offset().top;
+      $("html,body").animate({ scrollTop: d }, 2000)
+    }
+ )
 $(window).scroll(function(){
 	
 	var scrlTop = $(window).scrollTop();
