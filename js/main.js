@@ -1,13 +1,3 @@
- $(".nav-link").click(
-    function () {
-      $(this).parent().siblings().css("backgroundColor", "transparent");
-      $("nav ul li").addClass("active").siblings("li").removeClass("active");
-      $(this).parent().css("color", "#fff");
-      var aHref = $(this).attr("href");
-      var d = $(aHref).offset().top;
-      $("html,body").animate({ scrollTop: d }, 2000)
-    }
- )
 $(window).scroll(function(){
 	
 	var scrlTop = $(window).scrollTop();
@@ -41,3 +31,27 @@ $("#scrllTop").click(function(){
 	
 	$("html,body").animate({scrollTop:'0'},1000)
 })
+
+
+var button = document.getElementById("submit");
+button.addEventListener("click",function(){
+    alert("hello");
+    var firstName = document.getElementById("firstName").value;
+    var firstNameX = /[a-zA-z]{3,20}/;
+    var lastNameX = /[a-zA-z]{3,20}/;
+
+    var lastName = document.getElementById("lastName").value;
+    var mobileNumber = document.getElementById("mobileNumber").value;
+    var nationalId = document.getElementById("nationalId").value;
+    var email = document.getElementById("email").value;
+    var bloodType = document.getElementById("bloodType").value;
+
+    if(firstNameX.test(firstName) == true)
+    {
+        console.log("true")
+    }else{
+        console.log("false")
+    }
+})
+
+
